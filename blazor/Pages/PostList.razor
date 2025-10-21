@@ -25,7 +25,7 @@ else
             <th>Downvote</th>
         </tr>
 
-        @foreach (var post in posts.Take(visibleCount))
+        @foreach (var post in posts.Take(limit))
         {
             <tr>
                 <td><a href="/post/@post.Id">@post.Title</a></td>
@@ -40,7 +40,7 @@ else
         }
     </table>
 
-    @if (visibleCount < posts.Length)
+    @if (limit < posts.Length)
     {
         <button @onclick="ShowMore">Show more</button>
     }
@@ -48,7 +48,7 @@ else
 
 @code {
     private Post[]? posts;
-    private int visibleCount = 50; // viser 50 til at starte med
+    private int limit = 50; // viser 50 til at starte med
 
     protected override async Task OnInitializedAsync()
     {
@@ -60,7 +60,7 @@ else
 
     private void ShowMore()
     {
-        visibleCount += 50; // viser 50 flere når man klikker
+        limit += 50;
     }
 
     private async Task Upvote(int id)

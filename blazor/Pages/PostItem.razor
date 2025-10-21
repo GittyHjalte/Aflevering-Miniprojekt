@@ -49,7 +49,7 @@ else
             <th>Upvote</th>
             <th>Downvote</th>
         </tr>
-        @foreach (var comment in Comments)
+        @foreach (var comment in Comments.Take(limit))
         {
             <tr>
                 <td>@comment.Username</td>
@@ -64,17 +64,30 @@ else
         }
     </table>
     </div>
-
+    @if (limit < Comments.Count) // length på post's limit, men de gør vel det samme?
+    {
+        <button @onclick="ShowMore">Show more</button>
+    }
     <!-- This demonstrates how to pass in PostId to the component 'CreateComment'. See how 
          it is used in the file CreateComment.razor -->
     <CreateComment PostId="@PostId" OnCommentCreated="AddComment"></CreateComment>
+    
+    
+    
 }
 <button @onclick="GoBack">Back</button>
 @code{
-
+    private int limit = 50;
+    
+    
     private void GoBack()
     {
         NavManager.NavigateTo("/");
+    }
+    
+    private void ShowMore()
+    {
+        limit += 50;
     }
     
     private void AddComment(Comment newComment)
@@ -98,6 +111,8 @@ else
     {
         Post = await apiService.GetPost(PostId);
         Comments = await apiService.GetCommentsByPostId(PostId);
+        
+        Comments = Comments.OrderByDescending(c => c.DateCreated).ToList();
     }
 
     private async Task Upvote(int postid, int commentid)
