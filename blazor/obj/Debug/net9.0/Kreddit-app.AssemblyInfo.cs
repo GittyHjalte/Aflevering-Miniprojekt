@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Kreddit-app")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f9bb0a8cff14eb60a3346ba5b04666bc2ef0b6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3e04bb52e6986ed4185962898600b2e95cbf1abb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Kreddit-app")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Kreddit-app")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
