@@ -9,3 +9,15 @@ C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj
 C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\refint\shared.dll
 C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.pdb
 C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\ref\shared.dll
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\bin\Debug\net9.0\shared.deps.json
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\bin\Debug\net9.0\shared.dll
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\bin\Debug\net9.0\shared.pdb
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.AssemblyInfoInputs.cache
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.AssemblyInfo.cs
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.sourcelink.json
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.dll
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\refint\shared.dll
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\shared.pdb
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\shared\obj\Debug\net9.0\ref\shared.dll
