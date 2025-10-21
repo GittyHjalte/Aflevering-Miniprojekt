@@ -1,0 +1,11 @@
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\bin\Debug\net9.0\shared.deps.json
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\bin\Debug\net9.0\shared.dll
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\bin\Debug\net9.0\shared.pdb
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.AssemblyInfoInputs.cache
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.AssemblyInfo.cs
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.csproj.CoreCompileInputs.cache
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.dll
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\refint\shared.dll
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\shared.pdb
+C:\users\anders\desktop\3semester\softwarearkitektur\fullstackprojekt\shared\obj\Debug\net9.0\ref\shared.dll

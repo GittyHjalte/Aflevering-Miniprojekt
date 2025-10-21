@@ -1,0 +1,90 @@
+﻿@inherits LayoutComponentBase
+
+@using kreddit_app.Data
+@using shared.Model
+@inject ApiService apiService
+@inject NavigationManager NavManager
+
+<button @onclick="OnButtonClick">Create Post</button>
+
+@if (posts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table>
+        <tr>
+            <th>Title</th>
+            <th>Content</th>
+            <th>Date</th>
+            <th>Votes</th>
+            <th>Upvotes</th>
+            <th>Downvotes</th>
+            <th>Upvote</th>
+            <th>Downvote</th>
+        </tr>
+
+        @foreach (var post in posts.Take(visibleCount))
+        {
+            <tr>
+                <td><a href="/post/@post.Id">@post.Title</a></td>
+                <td>@post.Content</td>
+                <td>@post.DateCreated.ToShortDateString()</td>
+                <td>@(post.Upvotes - post.Downvotes)</td>
+                <td>@post.Upvotes</td>
+                <td>@post.Downvotes</td>
+                <td><button @onclick="() => Upvote(post.Id)">Upvote</button></td>
+                <td><button @onclick="() => Downvote(post.Id)">Downvote</button></td>
+            </tr>
+        }
+    </table>
+
+    @if (visibleCount < posts.Length)
+    {
+        <button @onclick="ShowMore">Show more</button>
+    }
+}
+
+@code {
+    private Post[]? posts;
+    private int visibleCount = 50; // viser 50 til at starte med
+
+    protected override async Task OnInitializedAsync()
+    {
+        posts = await apiService.GetPosts();
+
+        // Nyeste først
+        posts = posts.OrderByDescending(p => p.DateCreated).ToArray();
+    }
+
+    private void ShowMore()
+    {
+        visibleCount += 50; // viser 50 flere når man klikker
+    }
+
+    private async Task Upvote(int id)
+    {
+        var updatedPost = await apiService.UpvotePost(id);
+        if (updatedPost != null && posts != null)
+        {
+            var post = posts.FirstOrDefault(p => p.Id == id);
+            if (post != null) post.Upvotes = updatedPost.Upvotes;
+        }
+    }
+
+    private async Task Downvote(int id)
+    {
+        var updatedPost = await apiService.DownvotePost(id);
+        if (updatedPost != null && posts != null)
+        {
+            var post = posts.FirstOrDefault(p => p.Id == id);
+            if (post != null) post.Downvotes = updatedPost.Downvotes;
+        }
+    }
+
+    private void OnButtonClick()
+    {
+        NavManager.NavigateTo("/CreatePost");
+    }
+}

@@ -1,0 +1,23 @@
+﻿@page "/CreatePost"
+@inject NavigationManager NavManager
+
+<CreatePost />
+
+<style>
+    .back-btn {
+        margin-bottom: 10px;
+        background-color: #452d3d;
+        color: white;
+        border: none;
+        padding: 6px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+</style>
+<button @onclick="GoBack">Back</button>
+@code {
+    private void GoBack()
+    {
+        NavManager.NavigateTo("/");
+    }
+}

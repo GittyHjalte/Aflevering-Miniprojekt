@@ -1,0 +1,166 @@
+﻿<!-- 
+Notice how this route has a route parameter 'id'. This is how we can pass data to the route.
+See how the links are made in 'PostList.razor'.
+-->
+@page "/post/{id}"
+
+@using kreddit_app.Data;
+@using shared.Model;
+@inject NavigationManager NavManager
+@inject IJSRuntime JS
+@inject ApiService apiService
+
+<PageTitle>Kreddit</PageTitle>
+
+<style>
+div.contents {
+  background-color: #f2f0eb;
+  width: 600px;
+  border: 2px solid #452d3d;
+  padding: 10px;
+  margin-top: 20px;
+}
+</style>
+
+@if (Post == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="contents">
+        <h4>@Post.Title</h4>
+        <p> Date: @Post.DateCreated</p>
+        <p><strong>User: @Post.Username, Votes: @(Post.Upvotes - Post.Downvotes)</strong></p>
+        <p>@((MarkupString)ToLink(Post.Content))</p>
+
+    </div>
+    
+    <div class="contents">
+    <h4>Comments</h4>
+    <table>
+        <tr>
+            <th>User</th>
+            <th>Content</th>
+            <th>Date</th>
+            <th>Votes</th>
+            <th>Upvotes</th>
+            <th>Downvotes</th>
+            <th>Upvote</th>
+            <th>Downvote</th>
+        </tr>
+        @foreach (var comment in Comments)
+        {
+            <tr>
+                <td>@comment.Username</td>
+                <td>@((MarkupString)ToLink(comment.Content))</td>
+                <td>@comment.DateCreated.ToShortDateString()</td>
+                <td>@(comment.Upvotes - comment.Downvotes)</td>
+                <td>@(comment.Upvotes)</td>
+                <td>@(comment.Downvotes)</td>
+                <td><button @onclick="() => Upvote(PostId, comment.Id)">Upvote</button></td>
+                <td><button @onclick="() => Downvote(PostId, comment.Id)">Downvote</button></td>
+            </tr>
+        }
+    </table>
+    </div>
+
+    <!-- This demonstrates how to pass in PostId to the component 'CreateComment'. See how 
+         it is used in the file CreateComment.razor -->
+    <CreateComment PostId="@PostId" OnCommentCreated="AddComment"></CreateComment>
+}
+<button @onclick="GoBack">Back</button>
+@code{
+
+    private void GoBack()
+    {
+        NavManager.NavigateTo("/");
+    }
+    
+    private void AddComment(Comment newComment)
+    {
+        Comments.Add(newComment); // Tilføjer
+        StateHasChanged(); // nødvendig?
+    }
+
+    [Parameter] public string Id { get; set; }
+
+    public int PostId
+    {
+        get { return int.Parse(Id); }
+    }
+
+    public Post Post { get; set; }
+    public List<Comment> Comments { get; set; }
+    private Comment? voteComment;
+
+    protected override async Task OnInitializedAsync()
+    {
+        Post = await apiService.GetPost(PostId);
+        Comments = await apiService.GetCommentsByPostId(PostId);
+    }
+
+    private async Task Upvote(int postid, int commentid)
+    {
+        var updatedComment = await apiService.UpvoteComment(postid, commentid);
+        if (updatedComment != null)
+        {
+            foreach (var c in Comments)
+            {
+                if (c.Id == commentid)
+                {
+                    c.Upvotes = updatedComment.Upvotes;
+                    break;
+                }
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    private async Task Downvote(int postid, int commentid)
+    {
+        var updatedComment = await apiService.DownvoteComment(postid, commentid);
+        if (updatedComment != null)
+        {
+            foreach (var c in Comments)
+            {
+                if (c.Id == commentid)
+                {
+                    c.Downvotes = updatedComment.Downvotes;
+                    break;
+                }
+            }
+
+            StateHasChanged();
+        }
+    }
+
+    private MarkupString ToLink(string text)
+    {
+        if (string.IsNullOrWhiteSpace(text))
+            return (MarkupString)"";
+
+        var words = text.Split(' ');
+
+
+        // For loop her nok?
+        // TODO
+        for (int i = 0; i < words.Length; i++)
+        {
+            if (words[i].StartsWith("http://") || words[i].StartsWith("https://"))
+            {
+
+                words[i] = $"<a href=\"{words[i]}\" target=\"_blank\" rel=\"noopener noreferrer\">{words[i]}</a>";
+            }
+            else
+            {
+                // Gav HTML fejl før.
+                words[i] = System.Net.WebUtility.HtmlEncode(words[i]);
+            }
+        }
+        // Joiner til string
+        return (MarkupString)string.Join(" ", words);
+    }
+
+}

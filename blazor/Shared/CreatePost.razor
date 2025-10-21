@@ -1,0 +1,50 @@
+﻿
+@using kreddit_app.Data;
+@inject NavigationManager NavManager
+@inject ApiService apiService
+
+<div>
+    <br/>
+    <h3>Create a post!</h3>
+    <input placeholder="Title" type="input" id="title" @bind-value="title"/>
+    <input placeholder="Content" type="input" id="content" @bind-value="content"/>
+    <button id="createPostButton" type="button" @onclick="CreateNewPost">Post</button>
+</div>
+
+<div>
+    <input placeholder="Username" type="input" id="username" @bind-value="username"/>
+</div>
+<style>
+    button {
+        position: relative;
+        z-index: 10;
+    }
+</style>
+
+@code {
+
+    // PostId is passed in from the parent component. See how in PostItem.razor.
+
+
+    [Parameter]
+    public string username { get; set; }
+    private string title;
+    private string? content;
+    private DateTime dateCreated = DateTime.Now;
+
+    private async Task CreateNewPost()
+    {
+        if (string.IsNullOrWhiteSpace(username))
+            username = "Anonymous"; // bare hvis de ikke skriver noget
+
+        if (string.IsNullOrWhiteSpace(content))
+            return; // og så ikke anonymous hvis der ikke er skrevet noget.
+
+        var postCreated = await apiService.CreatePost(title, content, username, dateCreated);
+        if (postCreated != null)
+        {
+            NavManager.NavigateTo("/");
+        }
+    StateHasChanged();
+    }
+}

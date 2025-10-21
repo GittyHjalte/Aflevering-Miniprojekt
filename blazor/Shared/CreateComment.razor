@@ -1,0 +1,47 @@
+@using kreddit_app.Data;
+@using shared.Model
+@inject ApiService apiService
+
+<div>
+    <br/>
+    <h3>Write a comment</h3>
+    <input placeholder="Content" type="input" id="content" @bind-value="content"/>
+    <input placeholder="Username" type="input" id="username" @bind-value="username"/>
+    <button id="createPostButton" type="button" @onclick="CreateNewComment">Post comment</button>
+</div>
+
+@code {
+
+    // PostId is passed in from the parent component. See how in PostItem.razor.
+    [Parameter]
+    public int PostId { get; set; }
+    
+    [Parameter] public EventCallback<Comment> OnCommentCreated { get; set; }
+    
+    private string? content;
+    private string? username;
+    private DateTime dateCreated = DateTime.Now;
+    
+    // Fungerer void ikke med StateHasChanged()? // TODO
+    private async Task CreateNewComment()
+    {
+        if (content == null)
+        {
+            return;
+        }
+        if (string.IsNullOrWhiteSpace(username))
+            username = "Anonymous"; // samme som createpost.razor
+        
+      var CreatedComment = await apiService.CreateComment(content, PostId, username, dateCreated);
+      if (CreatedComment != null)
+      {
+          // Meld tilbage til parent-komponenten
+          await OnCommentCreated.InvokeAsync(CreatedComment);
+              
+          content = string.Empty;
+          username = string.Empty;
+          
+      }
+    }
+    
+}
