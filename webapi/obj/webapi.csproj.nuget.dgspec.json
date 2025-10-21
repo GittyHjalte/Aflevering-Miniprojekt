@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\webapi\\webapi.csproj": {}
+    "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\webapi\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\shared\\shared.csproj": {
+    "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\shared\\shared.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\shared\\shared.csproj",
+        "projectUniqueName": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\shared\\shared.csproj",
         "projectName": "shared",
-        "projectPath": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\shared\\shared.csproj",
-        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\shared\\obj\\",
+        "projectPath": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\shared\\shared.csproj",
+        "packagesPath": "C:\\Users\\zida1\\.nuget\\packages\\",
+        "outputPath": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\shared\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zida1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -59,21 +59,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\zida1\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\webapi\\webapi.csproj": {
+    "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\webapi\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\webapi\\webapi.csproj",
+        "projectUniqueName": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\webapi\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\webapi\\webapi.csproj",
-        "packagesPath": "C:\\Users\\Anders\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\webapi\\obj\\",
+        "projectPath": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\webapi\\webapi.csproj",
+        "packagesPath": "C:\\Users\\zida1\\.nuget\\packages\\",
+        "outputPath": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\webapi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Anders\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\zida1\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -85,8 +85,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\shared\\shared.csproj": {
-                "projectPath": "C:\\Users\\Anders\\Desktop\\3Semester\\SoftwareArkitektur\\Fullstackprojekt\\shared\\shared.csproj"
+              "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\shared\\shared.csproj": {
+                "projectPath": "D:\\RiderProjects\\Miniprojekt\\Fullstackprojekt\\shared\\shared.csproj"
               }
             }
           }
@@ -101,7 +101,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.100"
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net9.0": {
@@ -149,7 +149,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Users\\zida1\\.dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
