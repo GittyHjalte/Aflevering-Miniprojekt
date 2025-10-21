@@ -1093,8 +1093,6 @@ D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_f
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Win32.Registry.krtg4e9rjb.wasm
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\mscorlib.l6md3pggqy.wasm
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\netstandard.lij9csiyuf.wasm
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.pmfui9ltlu.pdb
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.ze80bfhvx9.wasm
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.AppContext.ch56s52ual.wasm
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Buffers.tlm3i6pt76.wasm
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Collections.Concurrent.jadgrn67lq.wasm
@@ -1418,7 +1416,6 @@ D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_f
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Console.w0ay1b4srp.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Net.ServicePoint.fb4vl6a7xv.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\dotnet.runtime.tsg4gsv2hg.js.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.ze80bfhvx9.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Drawing.5kh3shl062.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Runtime.Loader.5z1xrbq3gs.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Microsoft.Extensions.FileProviders.Abstractions.f6m2kkjm8i.wasm.gz
@@ -1450,7 +1447,6 @@ D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_f
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Reflection.Metadata.17tmzwz2au.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Microsoft.VisualBasic.Core.bcw8auwqwc.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Microsoft.AspNetCore.Components.Web.ip3tel2wdp.wasm.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.pmfui9ltlu.pdb.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Threading.Tasks.Dataflow.uf2vj8lolq.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Core.hclyk32q51.wasm.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\System.Text.Encodings.Web.grd8pnwzq5.wasm.gz
@@ -2086,8 +2082,6 @@ D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\qgzql3ydgf-tjcz0u77k5.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\tpw1hg1w4q-tptq2av103.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\0u55ngj7w8-lfu7j35m59.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\r97fl2cq1b-ze80bfhvx9.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\wsnmx6t0wk-pmfui9ltlu.gz
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\staticwebassets.build.json
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\staticwebassets.development.json
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\staticwebassets.build.endpoints.json
@@ -2102,10 +2096,16 @@ D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\Kreddit-ap
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\refint\Kreddit-app.dll
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\Kreddit-app.pdb
 D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\ref\Kreddit-app.dll
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.ck1tk3msl1.pdb
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.e9p85yjas7.wasm
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.ck1tk3msl1.pdb.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.e9p85yjas7.wasm.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\b5bbodd0wt-e9p85yjas7.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\7ornbq7ym2-ck1tk3msl1.gz
-D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\3o5ect7c5l-cntqjylqt6.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.mju3zdexjj.pdb
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.23wyjdc1p7.wasm
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.ywmoii3aty.pdb
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.34v1fqzbyh.wasm
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.mju3zdexjj.pdb.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\Kreddit-app.23wyjdc1p7.wasm.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.34v1fqzbyh.wasm.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\bin\Debug\net9.0\wwwroot\_framework\shared.ywmoii3aty.pdb.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\r97fl2cq1b-34v1fqzbyh.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\wsnmx6t0wk-ywmoii3aty.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\b5bbodd0wt-23wyjdc1p7.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\7ornbq7ym2-mju3zdexjj.gz
+D:\RiderProjects\Miniprojekt\Fullstackprojekt\blazor\obj\Debug\net9.0\compressed\3o5ect7c5l-cjx49k7fvq.gz

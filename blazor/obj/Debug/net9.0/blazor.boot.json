@@ -1,7 +1,7 @@
 {
   "mainAssemblyName": "Kreddit-app",
   "resources": {
-    "hash": "sha256-tXjh28BSTif1sEhcUGg/YC8O/rzaR1P0DJgF1IbIHb0=",
+    "hash": "sha256-9xSEqBUrB/OGdzJcgsXyvlHQBQ048K5idUluh6Qz7uA=",
     "fingerprinting": {
       "Microsoft.AspNetCore.Authorization.tnyc7xpluy.wasm": "Microsoft.AspNetCore.Authorization.wasm",
       "Microsoft.AspNetCore.Components.t32damlu4o.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -201,10 +201,10 @@
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
       "icudt_EFIGS.tptq2av103.dat": "icudt_EFIGS.dat",
       "icudt_no_CJK.lfu7j35m59.dat": "icudt_no_CJK.dat",
-      "shared.ze80bfhvx9.wasm": "shared.wasm",
-      "shared.pmfui9ltlu.pdb": "shared.pdb",
-      "Kreddit-app.e9p85yjas7.wasm": "Kreddit-app.wasm",
-      "Kreddit-app.ck1tk3msl1.pdb": "Kreddit-app.pdb"
+      "shared.34v1fqzbyh.wasm": "shared.wasm",
+      "shared.ywmoii3aty.pdb": "shared.pdb",
+      "Kreddit-app.23wyjdc1p7.wasm": "Kreddit-app.wasm",
+      "Kreddit-app.mju3zdexjj.pdb": "Kreddit-app.pdb"
     },
     "jsModuleNative": {
       "dotnet.native.8bti36lthm.js": "sha256-HFADmT26AarHu4tMjFaTPxINmQjBJGtdPN+CKjtNMFE="
@@ -414,12 +414,12 @@
       "WindowsBase.ovqw333kan.wasm": "sha256-7LCr4nX9JSGuwzMr8Rk8TGvC6ApzQNxCDiMV/0I9JlI=",
       "mscorlib.l6md3pggqy.wasm": "sha256-jZgH0LixLeQKqaq33akQgDGhfE7vbXbHtvCId5HC0Yo=",
       "netstandard.lij9csiyuf.wasm": "sha256-DeeBl9s8G34N3IfYRQ+MoY807amodj8cvpuvUSNaWE4=",
-      "shared.ze80bfhvx9.wasm": "sha256-ZX4XyKcVbzj3v7uDVq83VO5/i08Sw2NekQGWxFLgVOw=",
-      "Kreddit-app.e9p85yjas7.wasm": "sha256-4s7EwEK7Wv8/fTrrHbEt5JgmSEbuBT8urPfyuQSZWl4="
+      "shared.34v1fqzbyh.wasm": "sha256-w1r4iZnhdWUhMmVELsDaVnsxWQWBwdfldOJSJU9F0Dc=",
+      "Kreddit-app.23wyjdc1p7.wasm": "sha256-7h3SsA5+iektslOL7xy73ZIpZJ8+cALH9TH1r8VFs28="
     },
     "pdb": {
-      "shared.pmfui9ltlu.pdb": "sha256-X6+Wm+DdvzWw6stJtdSfPIPvgOWa7nep5mPPpQoPtS8=",
-      "Kreddit-app.ck1tk3msl1.pdb": "sha256-1HLXCoEaps2Uszl8oct9RFUfDfCPnI8euj3fIGLR/o8="
+      "shared.ywmoii3aty.pdb": "sha256-AhTfh+qmv8xHiU+NIzKfA2e6Aq1HrgkrGGESwfl4Diw=",
+      "Kreddit-app.mju3zdexjj.pdb": "sha256-YjQGcLZ9CfQuDiwBOPkFJKatrsT7qAd4fmYlXLqgn8o="
     }
   },
   "cacheBootResources": true,
